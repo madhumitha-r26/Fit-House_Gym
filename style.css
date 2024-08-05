@@ -1,0 +1,389 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f2f2;
+}
+
+.navbar{
+    background-color: #333;
+}
+
+.navbar-toggler:focus{
+   border: none;
+}
+
+#close-loginform,#close-registerform,#close-fpform{
+    position: absolute;
+    right: 7%;
+    top:7%;
+}
+
+.navbar-toggler:active{
+   border: none;
+}
+
+.navbar-brand{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.navbar-brand:hover{
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #ffffff;  
+    background-color: #333333; 
+}
+
+.main{
+    margin-top: 50px;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.navbar .navbar-nav .nav-link:active{
+    color: #ffffff;
+    background-color: #333333;
+    text-decoration: underline;
+}
+
+section {
+    padding: 25px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer {
+    color: #333;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#trainers,#workouts,#contact{
+    background-color:#333333;
+    color:#ffffff;
+}
+
+.card-text{
+    text-align: justify;
+}  
+
+#workouts .card,#trainers .card{
+    border: none;
+    background-color: #333333;
+    color: #ffffff; 
+    border-radius: 0%;
+}
+
+ .form{
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    font-size: large ;
+ }
+
+ .form input, .form textarea{
+    outline: none;
+ }
+
+ .cd{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    text-align: left;
+ }
+
+ .bi{
+    font-size: 1.5rem;
+    cursor: pointer;
+ }
+ .social{
+    
+    height: 50%;
+    margin-top: 50px;
+ }
+
+ .navbar-nav .nav-item {
+    padding: 5px;
+    text-align: right;
+  }
+
+  .gw{
+    color: #ffffff; 
+    text-decoration: none;
+  }
+
+  .gw:hover{
+    color: #ffffff; 
+    text-decoration: underline;
+  }
+
+
+  form a{
+    text-align: left;
+}
+
+.gen{
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-left: 0%;
+    font-size: large;
+}
+
+
+input [type="radio"]{
+    margin: 0%;
+    width: 10px;
+    font-size: medium;
+}
+
+  .overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:70%;
+    left:0px;
+    opacity:0.8;
+    z-index: 1;
+    display: none;
+}
+
+.loginbox, .registerbox{
+    position:absolute;
+    z-index: 2;
+    background-color:#ffffff;
+    color: #121111;
+    width:40%;
+    padding:40px;
+    border-radius:10px;
+    top:85%;
+    left:30%;
+    z-index: 2;
+    display:none;
+}
+
+.overlay2{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:50%;
+    left:0px;
+    opacity:0.8;
+    z-index: 3;
+    display: none;
+}
+
+
+.fpbox{
+    position:absolute;
+    background-color:#ffffff;
+    color: #121111;
+    width:40%;
+    padding:40px;
+    border-radius:10px;
+    top:85%;
+    left:30%;
+    z-index: 4;
+    display:none;
+}
+
+.loginbox input,.registerbox input,.fpbox input,.registerbox select{
+    background: transparent;
+    border:none;
+    width:100%;
+    margin:5px;
+    padding:5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.loginbox input::placeholder,
+.registerbox input::placeholder
+.fpbox input::placeholder
+.registerbox select::placeholder
+{
+    color: black;
+}
+
+.registerbox select option{
+    color:black;
+}
+
+
+
+.loginbox button,.registerbox button, .fpbox button{
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    border:none;
+    color: white;
+    cursor: pointer;
+}
+
+.loginbox input:focus,
+.registerbox input:focus, 
+.fpbox input:focus,
+.registerbox select
+{
+    outline: none;
+}
+
+
+form button{
+    width: 100%;
+}
+
+
+#workouts .col:hover{
+transform: scale(1.05);
+cursor: pointer;
+}
+
+#open-fpform{
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+}
+
+
+@media (max-width:600px){
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0%;
+        left:0%;
+        opacity:0.8;
+        z-index: 1;
+        display: none;
+    }
+
+    .registerbox, .loginbox{
+        width: 75%;
+        position: absolute;
+        top:20%;
+        left:15%;
+        z-index: 2;
+    }
+
+    .overlay2{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:50%;
+        left:0px;
+        opacity:0.8;
+        z-index: 3;
+        display: none;
+    }
+    
+}
+
+@media (max-width:768px){
+
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0%;
+        left:0%;
+        opacity:0.8;
+        z-index: 1;
+        display: none;
+    }
+
+    .registerbox, .loginbox{
+        width: 75%;
+        position: absolute;
+        top:20%;
+        left:15%;
+        z-index: 2;
+    }
+    .fpbox{
+        width: 75%;
+        position: absolute;
+        top:20%;
+        left:15%;
+        z-index: 4;
+    }
+
+    .overlay2{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:50%;
+        left:0px;
+        opacity:0.8;
+        z-index: 3;
+        display: none;
+    }
+    
+}
+
+
+
+@media (max-width:1281px){
+
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0%;
+        left:0%;
+        opacity:0.8;
+        z-index: 1;
+        display: none;
+    }
+
+    .registerbox, .loginbox{
+        width: 75%;
+        position: absolute;
+        top:20%;
+        left:15%;
+        z-index: 2;
+        font-size: large;
+    }
+
+    .fpbox{
+        width: 75%;
+        position: absolute;
+        top:20%;
+        left:15%;
+        z-index: 3;
+        font-size: large;
+    }
+
+    .overlay2{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:50%;
+        left:0px;
+        opacity:0.8;
+        z-index: 3;
+        display: none;
+    }
+    
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit House - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="imgs/logo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" data-bs-spy="scroll" data-bs-target="#navId">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="imgs/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                FIT HOUSE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="border: none;"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="navbar-hamburger">
+                  <i class="fa fa-bars" style="color: white;"></i>
+                </span>
+                <span id="navbar-close" style="display: none;">
+                  <i class="fa fa-close" style="color: white;" ></i>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-pills ms-auto" style="justify-content:end;">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#workouts">Workouts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nutrition">Nutrition</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#trainers">Trainers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#packages">Packages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<div class="main" data-bs-spy="scroll" data-bs-target="#simple-list-example"
+data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+    <section id="home">
+        <h1><b>Fit House - Unisex Gym</b></h1>
+        <p>Unleash Your Power, Transform Your Life</p>
+        <a href="fit house - gym brochure.pdf" download="fit-house-brouchure.pdf"  id="brouchure" class="btn btn-dark mb-3">Download Brochure</a>
+      <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imgs/carousel-2.jpeg" class="d-block w-100 h-50" alt="man doing exercise">
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/carousel-1.jpeg" class="d-block w-100 h-50" alt="woman with dumbbell">
+    </div>
+    <div class="carousel-item">
+      <img src="imgs/carousel-3.jpeg" class="d-block w-100 h-50" alt="man doing pull ups">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+
+<div class="overlay"></div>
+<div class="loginbox">
+  <i class="fa fa-close" id="close-loginform" style="cursor: pointer;color: black;"></i>
+  <h2>Login</h2>
+  <p>Login to view your gym schedule</p>
+  <form action="login_submit.php" method="post">
+    <input type="email" placeholder="Enter Email Id" id="emailid" name="emailid">   
+    <input type="password" placeholder="Enter Password" id="pwd" name="pwd">
+      <a type="button" id="open-fpform">Forgot Password</a>
+      <br><br>
+      <button type="submit" id="fetch-user">Login</button>
+  </form>
+</div>
+
+<div class="overlay2"></div>
+<div class="fpbox">
+  <i class="fa fa-close" id="close-fpform" style="cursor: pointer;color: black;"></i>
+  <h2>Forgot Password</h2>
+  <form action="forgot password.php" method="post">
+    <input type="email" placeholder="Enter Email Id" id="emailid" name="emailid">      
+    <input type="password" placeholder="Enter New Password" id="pwd1" name="pwd1">
+    <input type="password" placeholder="Enter Confirm Password" id="pwd2" name="pwd2">
+       
+    <br><br>
+    <button type="submit" id="change-pwd">Change Password</button>
+</form>
+</div>
+
+
+<div class="registerbox">
+  <i class="fa fa-close" id="close-registerform" style="cursor: pointer;color: black;"></i>
+  <h2>Register</h2>
+  <p>Register to become a member of our gym</p>
+  <form action="register_submit.php" method="post">    
+      
+    <input type="text" placeholder="Enter Username" id="username" name="username">
+
+<select id="gender" name="gender">
+  <option value="Select your Gender">Select your Gender</option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+</select>
+
+
+    <input type="number" placeholder="Enter Phone" id="phone" minlength="10" name="phone">
+    <input type="email" placeholder="Enter Email Id" id="emailid" name="emailid">
+    <input type="password" placeholder="Enter Password" id="pwd" name="pwd" minlength="8">
+    <select id="session" name="session">
+        <option value="Select your Session">Select your Session</option>
+        <option value="Morning">Morning</option>
+        <option value="Evening">Evening</option>
+    </select>
+      <br><br>
+    <button type="submit" id="add-user">Register</button>
+  </form>
+</div>
+
+<button type="submit"  id="loginbtn" class="btn btn-dark mb-3">Login</button>
+<button type="submit"  id="registerbtn" class="btn btn-dark mb-3">Register</button>
+
+</section>
+
+    <section id="workouts">
+        <h2><b>Workouts</b></h2>
+        <p>Discover our variety of workouts designed to transform your body and mind.</p>
+      
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29ya291dHxlbnwwfHwwfHx8MA%3D%3D
+      "  alt="Gymnastics">
+            <div class="card-body">
+              <h5 class="card-title">Yoga</h5>
+            </div>
+          </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdvcmtvdXR8ZW58MHx8MHx8fDA%3D" alt="Stretching">
+      <div class="card-body">
+        <h5 class="card-title">Stretching</h5>
+      </div>
+    </div>
+  </div> 
+
+  <div class="col">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/371049/pexels-photo-371049.jpeg?auto=compress&cs=tinysrgb&w=600"  alt="Squats" >
+      <div class="card-body">
+        <h5 class="card-title">Squats</h5>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+<br>
+
+<a href="workout.html" class="gw"><p> And more...</p></a>
+</section>
+
+    <section id="nutrition">
+        <h2><b>Nutrition</b></h2>
+        <p>Balance your workouts with our comprehensive nutrition plans.</p>
+
+<div class="card-group mx-3">
+  <div class="card">
+    <img src="imgs/gym food-1.jpeg"  class="card-img-top" alt="food-1">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Veggie Salad</h5>
+      <p class="card-text">The salad includes green lettuce leaves, sliced cucumbers, shredded purple cabbage, yellow corn kernels, orange carrot slices, and halves of hard-boiled eggs.  </p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="imgs/gym food-2.jpeg" class="card-img-top" alt="food-2">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Egg Scrambles</h5>
+      <p class="card-text">A close-up of two slices of brown bread topped with avocado slices, boiled egg halves, and scattered pine nuts. 
+        There is a visible seasoning of black pepper on the eggs and avocado.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="imgs/gym food-3.jpeg" class="card-img-top" alt="food-3">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Fruit Salad</h5>
+      <p class="card-text">A variety of fresh fruits and nuts arranged on a plate. 
+        There are sliced strawberries, whole raspberries, blueberries, segments of 
+        peeled orange, and a cluster of hazelnuts.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="imgs/gym food-4.jpeg" class="card-img-top" alt="food-4">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">A bowl of dry fruits</h5>
+      <p class="card-text">A wooden bowl filled with almonds, raisins, and diced dried fruit, possibly pineapple combination may be a perfect healty snack. 
+        
+     </p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="imgs/gym food-5.jpeg" class="card-img-top" alt="food-5">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Chicken Soup</h5>
+      <p class="card-text">The classic chicken soup consists of a clear chicken broth, often with pieces of chicken or vegetables which gives a comfort diet.</p>
+    </div>
+  </div>
+        
+  <div class="card">
+    <img src="imgs/gym food-6.jpeg" class="card-img-top" alt="food-6">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">Greeny Salad</h5>
+      <p class="card-text">A bowl of salad containing various types of leafy greens and some red cherry tomatoes that appears fresh and has the green leaves and red tomatoes. </p>
+    </div>
+  </div>
+</div>
+    </section>
+
+
+    <section id="trainers">
+        <h2><b>Meet Our Trainers</b></h2>
+        <p>Our trainers are here to guide and motivate you every step of the way.</p>
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col">
+              <div class="card">
+                <img src="imgs/trainer-1.jpeg" class="card-img-top" alt="trainer-1" style="border-radius: 0%;">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Julie Smith</h5>
+                  <p class="card-text text-center">Nutrition Consultant</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imgs/trainer-2.jpeg" class="card-img-top" alt="trainer-2" style="border-radius: 0%;">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Sanjay Kumar</h5>
+                  <p class="card-text text-center">Health and Wellness Coach</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imgs/trainer-3.jpeg" class="card-img-top" alt="trainer-3" style="border-radius: 0%;">
+                <div class="card-body">
+                <h5 class="card-title fw-bold">Shreya Agarwal</h5>
+                  <p class="card-text text-center">Membership Coordinator</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imgs/trainer-4.jpeg" class="card-img-top" alt="trainer-4" style="border-radius: 0%;">
+                <div class="card-body">
+                <h5 class="card-title fw-bold">Harsh Mehta</h5>
+                  <p class="card-text text-center">Fitness Inspector</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+  <section id="packages">
+    <h2><b>Packages</b></h2>
+    <p class="fs-5">Get our exclusive packages for your fitness program</p>
+    <p class="fs-6 fst-italic"><b>Grab 40% offer for first time</b></p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="imgs/gym pack-1.png" class="card-img-top" alt="basic">
+          <div class="card-body">
+            <h5 class="card-title h4 fw-bold">Basic Package</h5>
+            <h6 class="card-title fs-4">3 - Months</h6>
+            <p class="card-text text-center fw-semimedium"><s>₹ 3500/-</s> &nbsp; ₹ 1400/-</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="imgs/gym pack-2.png" class="card-img-top" alt="advance">
+          <div class="card-body">
+            <h5 class="card-title h4 fw-bold">Advance Package</h5>
+            <h6 class="card-title fs-4">6 - Months</h6>
+            <p class="card-text text-center fw-semimedium"><s>₹ 6500/-</s>&nbsp; ₹ 2600/-</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="imgs/gym pack-3.png" class="card-img-top" alt="premium">
+          <div class="card-body">
+            <h5 class="card-title h4 fw-bold">Premium Package</h5>
+            <h6 class="card-title fs-4">1 - Year</h6>
+            <p class="card-text text-center fw-semimedium"><s>₹ 9500/-</s>&nbsp; ₹ 3800/-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section id="contact">
+        <h2><b>Contact Us</b></h2>
+        <p>Get in touch to learn more about our programs and memberships.</p>
+        <div class="form p-3">
+        <div class="mb-3" >
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your Message..." style="height: 100px;"></textarea>
+          </div>
+
+          <div class="col-12" style="justify-content: end;">
+            <button type="submit" class="btn btn-light mb-3" style="font-size: larger;"><i class="bi bi-send-fill"></i>&nbsp; Send Message</button>
+          </div> 
+<div class="cd">   
+  <div class="con">
+          <p><i class="fa fa-phone"></i>&nbsp;+91 9876543210</p>
+          <p><i class="fa fa-envelope"></i>&nbsp;fithousegym@gmail.com</p>
+          <address class="text-left">
+            <i class="fa fa-solid fa-location-dot"></i>
+            Madurai, Tamil Nadu, India</address>
+  </div>
+  <div class="social">
+    <h6><b>Connect Us</b></h6>
+    <i class="bi bi-instagram"></i>&nbsp;
+    <i class="bi bi-facebook"></i>&nbsp;
+    <i class="bi bi-twitter-x"></i>&nbsp;
+    <i class="bi bi-youtube"></i>&nbsp;
+  </div>
+
+
+</div>
+</div>
+    </section>
+
+    <footer class="fw-medium fs-4">
+        <p>&copy; 2024 Fit House Unisex Gym. All rights reserved.</p>
+    </footer>
+</div>
+
+<script type="text/javascript" src="script.js">
+
+</script>
+</body>
+</html>
