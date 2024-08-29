@@ -130,6 +130,14 @@ footer {
     text-align: left;
 }
 
+.modal-header{
+    border:none;
+}
+
+.btn-close:focus{
+    border: none;
+}
+
 .gen{
     display: flex;
     justify-content: center;
@@ -138,66 +146,22 @@ footer {
     font-size: large;
 }
 
-
-input [type="radio"]{
-    margin: 0%;
-    width: 10px;
-    font-size: medium;
-}
-
   .overlay{
     background-color: black;
     width: 100%;
     height: 100%;
     position: absolute;
-    top:70%;
-    left:0px;
+    top:20%;
+    left:30%;
     opacity:0.8;
     z-index: 1;
     display: none;
 }
 
-.loginbox, .registerbox{
-    position:absolute;
-    z-index: 2;
-    background-color:#ffffff;
-    color: #121111;
-    width:40%;
-    padding:40px;
-    border-radius:10px;
-    top:85%;
-    left:30%;
-    z-index: 2;
-    display:none;
-}
-
-.overlay2{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:50%;
-    left:0px;
-    opacity:0.8;
-    z-index: 3;
-    display: none;
-}
 
 
-.fpbox{
-    position:absolute;
-    background-color:#ffffff;
-    color: #121111;
-    width:40%;
-    padding:40px;
-    border-radius:10px;
-    top:85%;
-    left:30%;
-    z-index: 4;
-    display:none;
-}
-
-.loginbox input,.registerbox input,.fpbox input,.registerbox select{
+.loginbox input,.registerbox input,
+.fpbox input,.registerbox select{
     background: transparent;
     border:none;
     width:100%;
@@ -259,131 +223,4 @@ cursor: pointer;
     cursor: pointer;
     position: absolute;
     right: 5%;
-}
-
-
-@media (max-width:600px){
-    .overlay{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top:0%;
-        left:0%;
-        opacity:0.8;
-        z-index: 1;
-        display: none;
-    }
-
-    .registerbox, .loginbox{
-        width: 75%;
-        position: absolute;
-        top:20%;
-        left:15%;
-        z-index: 2;
-    }
-
-    .overlay2{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top:50%;
-        left:0px;
-        opacity:0.8;
-        z-index: 3;
-        display: none;
-    }
-    
-}
-
-@media (max-width:768px){
-
-    .overlay{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top:0%;
-        left:0%;
-        opacity:0.8;
-        z-index: 1;
-        display: none;
-    }
-
-    .registerbox, .loginbox{
-        width: 75%;
-        position: absolute;
-        top:20%;
-        left:15%;
-        z-index: 2;
-    }
-    .fpbox{
-        width: 75%;
-        position: absolute;
-        top:20%;
-        left:15%;
-        z-index: 4;
-    }
-
-    .overlay2{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top:50%;
-        left:0px;
-        opacity:0.8;
-        z-index: 3;
-        display: none;
-    }
-    
-}
-
-
-
-@media (max-width:1281px){
-
-    .overlay{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top:0%;
-        left:0%;
-        opacity:0.8;
-        z-index: 1;
-        display: none;
-    }
-
-    .registerbox, .loginbox{
-        width: 75%;
-        position: absolute;
-        top:20%;
-        left:15%;
-        z-index: 2;
-        font-size: large;
-    }
-
-    .fpbox{
-        width: 75%;
-        position: absolute;
-        top:20%;
-        left:15%;
-        z-index: 3;
-        font-size: large;
-    }
-
-    .overlay2{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top:50%;
-        left:0px;
-        opacity:0.8;
-        z-index: 3;
-        display: none;
-    }
-    
 }

@@ -53,7 +53,7 @@
             </div>
           </nav>
     </header>
-
+    
 <div class="main" data-bs-spy="scroll" data-bs-target="#simple-list-example"
 data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 
@@ -84,38 +84,61 @@ data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabind
 </div>
 <br>
 
-<div class="overlay"></div>
-<div class="loginbox">
-  <i class="fa fa-close" id="close-loginform" style="cursor: pointer;color: black;"></i>
-  <h2>Login</h2>
-  <p>Login to view your gym schedule</p>
-  <form action="login_submit.php" method="post">
-    <input type="email" placeholder="Enter Email Id" id="emailid" name="emailid">   
-    <input type="password" placeholder="Enter Password" id="pwd" name="pwd">
-      <a type="button" id="open-fpform">Forgot Password</a>
-      <br><br>
-      <button type="submit" id="fetch-user">Login</button>
-  </form>
-</div>
 
-<div class="overlay2"></div>
-<div class="fpbox">
-  <i class="fa fa-close" id="close-fpform" style="cursor: pointer;color: black;"></i>
-  <h2>Forgot Password</h2>
-  <form action="forgot password.php" method="post">
-    <input type="email" placeholder="Enter Email Id" id="emailid" name="emailid">      
-    <input type="password" placeholder="Enter New Password" id="pwd1" name="pwd1">
-    <input type="password" placeholder="Enter Confirm Password" id="pwd2" name="pwd2">
-       
-    <br><br>
-    <button type="submit" id="change-pwd">Change Password</button>
-</form>
+<div class="loginbox modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" style="background-color: transparent;" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Login</h2>
+        <p>Login to view your gym schedule</p>
+        <form action="login_submit.php" method="post">
+          <input type="email" placeholder="Enter Email Id" id="emailid" name="emailid">   
+          <input type="password" placeholder="Enter Password" id="pwd" name="pwd">
+            <a type="button" id="open-fpform" data-bs-toggle="modal" data-bs-target="#exampleModal3">Forgot Password</a>
+            <br><br>
+            <button type="submit" id="fetch-user">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-<div class="registerbox">
-  <i class="fa fa-close" id="close-registerform" style="cursor: pointer;color: black;"></i>
-  <h2>Register</h2>
+
+<div class="fpbox modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" style="background-color: transparent;" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Forgot Password</h2>
+        <form action="forgot password.php" method="post">
+          <input type="email" placeholder="Enter Email Id" id="emailid" name="emailid">      
+          <input type="password" placeholder="Enter New Password" id="pwd1" name="pwd1">
+          <input type="password" placeholder="Enter Confirm Password" id="pwd2" name="pwd2">
+             
+          <br><br>
+          <button type="submit" id="change-pwd">Change Password</button>
+      </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="registerbox modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" style="background-color: transparent;" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Register</h2>
   <p>Register to become a member of our gym</p>
   <form action="register_submit.php" method="post">    
       
@@ -139,10 +162,14 @@ data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabind
       <br><br>
     <button type="submit" id="add-user">Register</button>
   </form>
+      </div>
+      
+    </div>
+  </div>
 </div>
 
-<button type="submit"  id="loginbtn" class="btn btn-dark mb-3">Login</button>
-<button type="submit"  id="registerbtn" class="btn btn-dark mb-3">Register</button>
+<button type="submit"  id="loginbtn" class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">Login</button>
+<button type="submit"  id="registerbtn" class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Register</button>
 
 </section>
 
